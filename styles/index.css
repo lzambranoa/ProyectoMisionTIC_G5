@@ -4,3 +4,40 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegacion Drawer */
+
+#nav_drawer {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #dad9d9;
+}
+
+#nav_drawer header {
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    background:  #cac9c9;
+    user-select: none;
+}
+
+#nav_drawer ul a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 40px;
+    color: black;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+}
