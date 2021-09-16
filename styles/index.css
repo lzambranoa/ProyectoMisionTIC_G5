@@ -14,10 +14,11 @@ html {
 
 #nav_drawer {
     position: fixed;
-    left: 0;
+    left: -250px;
     width: 250px;
     height: 100%;
     background-color: #dad9d9;
+    transition: all .5s ease;
 }
 
 #nav_drawer header {
@@ -40,4 +41,57 @@ html {
     box-sizing: border-box;
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+#nav_drawer ul li:hover a {
+    padding-left: 50px;
+}
+
+ul li:hover a {
+    background: rgb(183, 235, 183);
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(183, 235, 183);
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -205px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(183, 235, 183);
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ #nav_drawer{
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 205px;
 }
