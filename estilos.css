@@ -95,3 +95,20 @@ label #cancel {
 #check:checked ~ label #cancel {
     left: 205px;
 }
+
+/* Boton de navegacion de registro*/
+
+#buttonreg_nav {
+    background: transparent;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #FF5733;
+    margin: 20px 0 20px 30px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
+#buttonreg_nav:hover{
+    background: #FF5733;
+}
