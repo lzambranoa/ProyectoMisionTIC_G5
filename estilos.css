@@ -109,6 +109,11 @@ label #cancel {
     transition: all .5s ease-in;
 }
 
+#buttonreg_nav a {
+    text-decoration: none;
+    color: black;
+}
+
 #buttonreg_nav:hover{
     background: #FF5733;
 }
@@ -121,6 +126,10 @@ label #cancel {
     height: 500px;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    margin: 150px auto;
+    padding: 20px 0;
 }
 
 #formRegistro h1 {
@@ -136,4 +145,23 @@ label #cancel {
     height: 300px;
     color: #FF5733;
     margin: 0 auto;
+}
+
+/* Estilos de Aspectos Generales*/
+
+#contenedor{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid beige;
+}
+
+.btnPersonalizado {
+    background: transparent;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    border: 2px solid rgb(183, 235, 183);
+    cursor: pointer;
+    transition: all .5s ease-in; 
 }
