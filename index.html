@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e62625ef8d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./estilos.css">
     <title>ProyectoMisionTic</title>
 </head>
+
 <body>
-    <input type="checkbox"  id="check">
+    <input type="checkbox" id="check">
     <label for="check">
         <i class="fas fa-bars" id="btn"></i>
         <i class="fas fa-times" id="cancel"></i>
@@ -23,15 +33,44 @@
             <li><a href="#">Opcion 3</a></li>
             <li><a href="#">Opcion 4</a></li>
         </ul>
-    </div><!--Fin Nav-Drawer-->
-    <div class="container contenido-header">
-        <div class="barra">
-            <a href="#">
-                <h1>Bienes <span>raices</span></h1>
-            </a>
-            <nav></nav>
-        </div>
-        <h1>Las mejores oferta inmobiliarias, en venta y alquiler de Casas y Departamentos</h1>
     </div>
+    <!--Fin Nav-Drawer-->
+    <div id="hero">
+        <div class="container container_barra">
+            <div class="barra">
+                <div>
+                    <h1>Bienes<span>raices</span></h1>
+                </div>
+                <div>
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Galeria</a>
+                        <a href="#">Nuestros Clientes</a>
+                        <a href="#">Testimonios</a>
+                        <a href="#">Subscribete</a>
+                        <a href="#">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="info">
+                <h1>Las mejores ofertas inmobiliarias, en venta y alquiler de Casas y apartamentos</h1>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container galeria">
+            <h1>Nuestros últimos modelos</h1>
+            <hr>
+            <div class="contendor_imagenes">
+                <img src="./img/casa1.jpg" alt="casa1">
+                <img src="./img/casa2.jpg" alt="casa2">
+                <img src="./img/casa3.jpg" alt="casa3">
+                <img src="./img/apto1.jpg" alt="apto1">
+                <img src="./img/apto2.jpg" alt="apto2">
+                <img src="./img/apto3.jpg" alt="apto3">
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

@@ -15,23 +15,12 @@ a {
 }
 
 body {
-    background-image: url('/img/home.jpg');
-    background-size: cover;
-    background-position: top center;
-    height: 100vh;
-}
-
-body::before {
-    content:'';
-	position: absolute;
-        top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
+    background-color: white;
+    font-family: 'Bitter', serif;
 }
 
 /* Barra de navegacion Drawer */
+
 
 #nav_drawer {
     position: fixed;
@@ -40,6 +29,7 @@ body::before {
     height: 100%;
     background-color: #dad9d9;
     transition: all .5s ease;
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 #nav_drawer header {
@@ -85,6 +75,7 @@ label #btn, label #cancel{
 }
 
 label #btn {
+    position: fixed;
     left: 40px;
     top: 25px;
     font-size: 35px;
@@ -94,6 +85,7 @@ label #btn {
 }
 
 label #cancel {
+    position: fixed;
     z-index: 1111;
     left: -205px;
     top: 17px;
@@ -170,11 +162,15 @@ label #cancel {
 
 /* Estilos de Aspectos Generales*/
 
-#contenedor{
-    width: 80%;
+#hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('/img/home.jpg');
+    background-size: cover;
+    background-position: top center;
     height: 100vh;
-    margin: 0 auto;
-    border: 1px solid beige;
 }
 
 .btnPersonalizado {
@@ -188,31 +184,89 @@ label #cancel {
 }
 
 .container{
-    max-width: 1200px;
+    
+    max-width: 1400px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
-.contenido-header{
-    height: 100%;
+.container_barra {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.contenido-header a h1 {
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.contenido-header h1 {
-    color: white;
-    padding-bottom: 2rem;
-    max-width: 50rem;
-    line-height: 1.5;
+    z-index: 1;
 }
 
 .barra {
-    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 20px 10px 0px 10px;
+    z-index: 1;
+}
+
+.barra h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.barra a {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.barra a:hover{
+    color: rgb(183, 235, 183);
+}
+
+.info {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 300;
+    width: 50rem;
+    color: white;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+section {
+    background-color: #dad9d9;
+    height: 600px;
+    padding: 20px 0px;
+}
+
+.galeria {
+    text-align: center;
+}
+
+hr {
+    width: 350px;
+    color: #FF5733;
+    margin: 0 auto;
+}
+
+.contendor_imagenes {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.contendor_imagenes img {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+
 }
