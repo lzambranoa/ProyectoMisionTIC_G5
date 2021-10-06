@@ -291,6 +291,7 @@ hr {
     height: 200px;
 }
 
+
 /*Pagina Nosotros*/
 
 #nosotros {
@@ -318,3 +319,116 @@ hr {
 .imagen img {
     width: 320px;
 }
+=======
+}
+.wrap {
+    width: 20%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.formulario2 >div {
+    padding: 1px 0;
+}
+
+.formulario2 input[type="radio"]{
+    display: none;
+}
+.formulario2 .radio label{
+    color: #fff;
+    background: rgb(0, 0, 0,.1);
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.33s ease;
+}
+.formulario2 .radio label:hover{
+    background: rgba(0,116,216,0.1);
+}
+.formulario2 .radio label::before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #1f53c5;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+}
+.formulario2 input[type ="radio"]:checked + label{
+    padding: 5px 15px;
+    background:#1f53c5;
+    border-radius: 2px;
+    color: #fff;
+
+}
+.formulario2 input[type ="radio"]:checked + label::before{
+    display: none;
+}
+ 
+/*body {
+    background-image: url('fondo.jpg');
+}*/
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    background-image: linear-gradient(0deg, #24303c 0%, #838380 100%);
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 13px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 23px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
