@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="./estilos.css">
+    <script src="./form4.js"></script>
 </head>
 <body>
     <section class="form-register">
         <h4>Formulario de Registro</h4>
-        <input class="controls" type="text" name= nombrecompleto id="campoNombre" placeholder="Ingrese Nombre Completo">
+        <input class="controls" type="text" name= nombrecompleto id="campoNombre" placeholder="Ingrese Nombre Completo" onkeyup="validar_nombre(this.value)">
         <input class="controls" type="tel" name= tel id="campoTelefono" placeholder="Ingrese Número de Celular">
         <input class="controls" type="email" name= email id="campoEmail" placeholder="Ingrese Correo Electronico">
         <input class="controls" type="password" name= password id="campoPassword" placeholder="Ingrese Contraseña">
@@ -31,8 +32,9 @@
             </form>
         </div>
         <p>Estoy de acuerdo con <a href="#">Terminos y Condicones</a></p>
-        <input class="botons" type="submit" value="Registrarse">
+        <input class="botons" type="submit" value="Registrarse" >
     </section>
+    <p id="error"></p>
     </div>
 </body>
 </html>

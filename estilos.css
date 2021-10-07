@@ -319,8 +319,7 @@ hr {
 .imagen img {
     width: 320px;
 }
-=======
-}
+
 .wrap {
     width: 20%;
     max-width: 400px;
@@ -404,6 +403,26 @@ hr {
     font-family: 'calibri';
     font-size: 18px;
     color: white;
+  }
+
+  .error {
+    width: 100%;
+    background:rgb(221, 155, 155);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 13px;
+    border: 1px solid red;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+  }
+
+  #error {
+      text-align: center;
+      color: red;
+      font-size: 15px;
+      margin-top: 40px;
+      text-transform: uppercase;
   }
   
   .form-register p {
