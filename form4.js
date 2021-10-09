@@ -43,25 +43,21 @@ function validar_contrasenas(contrasena, confirmarContrasena) {
     alert("Los campos de la password no pueden quedar vacios");
     return false;
     }
-    
-    if (contrasena != confirmarContrasena) {
-    alert("Las passwords deben de coincidir");
 
     if (contrasena.length == 0 && confirmarContrasena.length == 0) {
     /*alert("Los campos de la password no pueden quedar vacios");*/
     return false;
     }
     
-    if (contrasena != confirmarContrasena) {
+    if (contrasena === confirmarContrasena) {
     /*alert("Las passwords deben de coincidir");*/
-
-    return false;
+        return true;
     } else {
     /*alert("Todo esta correcto");*/
-    return true; 
+        return false; 
     }
 }
-}
+
 
 
 module.exports.validar_nombre = validar_nombre
