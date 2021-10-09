@@ -20,6 +20,7 @@ function validar_nombre(nombre) {
 
 }
 
+
 function validar_contrasenas(contrasena, confirmarContrasena) {
     // var p1 = document.getElementById("campoPassword").value;
     //var p2 = document.getElementById("campoConfirmarPassword").value;
@@ -33,10 +34,11 @@ function validar_contrasenas(contrasena, confirmarContrasena) {
         }
 
     if (espacios) {
-    alert ("La contraseña no puede contener espacios en blanco");
+    /*alert ("La contraseña no puede contener espacios en blanco");*/
     return false;
     }
     
+
     if (contrasena.length == 0 && confirmarContrasena.length == 0) {
     alert("Los campos de la password no pueden quedar vacios");
     return false;
@@ -44,12 +46,22 @@ function validar_contrasenas(contrasena, confirmarContrasena) {
     
     if (contrasena != confirmarContrasena) {
     alert("Las passwords deben de coincidir");
+
+//     if (p1.length == 0 && p2.length == 0) {
+//     /*alert("Los campos de la password no pueden quedar vacios");*/
+//     return false;
+//     }
+    
+//     if (p1 != p2) {
+//     /*alert("Las passwords deben de coincidir");*/
+// >>>>>>> main
     return false;
     } else {
-    alert("Todo esta correcto");
+    /*alert("Todo esta correcto");*/
     return true; 
     }
 }
+
 
 module.exports.validar_nombre = validar_nombre;
 module.exports.validar_contrasenas = validar_contrasenas;
