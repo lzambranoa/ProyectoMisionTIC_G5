@@ -11,11 +11,12 @@
 <body>
     <section class="form-register">
         <h4>Formulario de Registro</h4>
-        <input class="controls" type="text" name= nombrecompleto id="campoNombre" placeholder="Ingrese Nombre Completo" onkeyup="validar_nombre(this.value)">
-        <input class="controls" type="tel" name= tel id="campoTelefono" placeholder="Ingrese Número de Celular">
-        <input class="controls" type="email" name= email id="campoEmail" placeholder="Ingrese Correo Electronico">
-        <input class="controls" type="password" name= password id="campoPassword" placeholder="Ingrese Contraseña" >
-        <input class="controls" type="password" name= confirmarPassword id="campoConfirmarPassword" placeholder="Ingrese Confirmación de Contraseña" onmouseout="validar_contrasenas()">
+        <input class="controls" type="text" name= "nombrecompleto" id="campoNombre" placeholder="Ingrese Nombre Completo" onkeyup="validar_nombre(this.value)">
+        <input class="controls" type="tel" name= "tel" id="campoTelefono" placeholder="Ingrese Número de Celular">
+        <input class="controls" type="email" name= "email" id="campoEmail" placeholder="Ingrese Correo Electronico">
+        <input class="controls" type="password" name= "password" id="campoContrasena" placeholder="Ingrese Contraseña" value="" >
+        <input class="controls" type="password" name= "confirmarPassword" id="campoConfirmarContrasena" placeholder="Ingrese Confirmación de Contraseña" >
+        <!-- onmouseout="validar_contrasenas() -->
         <p>Tipo de cliente</p>
         <div class="wrap">
             <form action="" class="formulario2">
@@ -32,7 +33,7 @@
             </form>
         </div>
         <p>Estoy de acuerdo con <a href="#">Terminos y Condicones</a></p>
-        <input class="button" type="submit" value="Registrarse" onsubmit="validar_contrasenas()">
+        <input class="button" type="submit" value="Registrarse" onclick="validar_contrasenas(password.value, confirmarPassword.value)">
     </section>
     <p id="error"></p>
     </div>
