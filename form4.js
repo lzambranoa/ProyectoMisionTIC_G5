@@ -8,7 +8,7 @@ function validar_nombre(nombre) {
     if (nombre.length > 4 && nombre.length <= 30 && resultado) {
         let elemento = document.getElementById('campoNombre');
         elemento.className = 'controls'
-        msm.innerText = "";
+        msm.innerText = "Aprobado";
         //return true;
     } else {
         let elemento = document.getElementById('campoNombre');
@@ -47,21 +47,22 @@ function validar_contrasenas(contrasena, confirmarContrasena) {
     if (contrasena != confirmarContrasena) {
     alert("Las passwords deben de coincidir");
 
-//     if (p1.length == 0 && p2.length == 0) {
-//     /*alert("Los campos de la password no pueden quedar vacios");*/
-//     return false;
-//     }
+    if (contrasena.length == 0 && confirmarContrasena.length == 0) {
+    /*alert("Los campos de la password no pueden quedar vacios");*/
+    return false;
+    }
     
-//     if (p1 != p2) {
-//     /*alert("Las passwords deben de coincidir");*/
-// >>>>>>> main
+    if (contrasena != confirmarContrasena) {
+    /*alert("Las passwords deben de coincidir");*/
+
     return false;
     } else {
     /*alert("Todo esta correcto");*/
     return true; 
     }
 }
+}
 
 
-module.exports.validar_nombre = validar_nombre;
-module.exports.validar_contrasenas = validar_contrasenas;
+module.exports.validar_nombre = validar_nombre
+module.exports.validar_contrasenas = validar_contrasenas
