@@ -3,18 +3,18 @@ function validar_nombre(nombre) {
 
     let validador = /^[a-zA-ZÀ-ÿ\s]{1,40}$/
     let resultado = validador.test(nombre);
-    let msm = document.getElementById('error');
+    //let msm = document.getElementById('error');
 
     if (nombre.length > 4 && nombre.length <= 30 && resultado) {
-        let elemento = document.getElementById('campoNombre');
-        elemento.className = 'controls'
-        msm.innerText = "Aprobado";
-        //return true;
+        // let elemento = document.getElementById('campoNombre');
+        // elemento.className = 'controls'
+        // msm.innerText = "Aprobado";
+        return true;
     } else {
-        let elemento = document.getElementById('campoNombre');
-        elemento.className = 'error'
-        msm.innerText = "El nombre debe contener entre 4 y 30 caracteres, solo se aceptan letras";
-        //return false;
+        // let elemento = document.getElementById('campoNombre');
+        // elemento.className = 'error'
+        // msm.innerText = "El nombre debe contener entre 4 y 30 caracteres, solo se aceptan letras";
+        return false;
     }
 
 
