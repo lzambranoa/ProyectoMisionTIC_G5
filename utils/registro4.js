@@ -1,3 +1,5 @@
+let items = [];
+
 function recibirEdad() {
     let edad;
     // edad = prompt("Ingrese su edad");
@@ -7,7 +9,7 @@ function recibirEdad() {
 
 
 function ordenarEdad(edad) {
-    let items = [];
+    
     let objeto = {
         'nombre': document.getElementById('campoNombre').value,
         'contrasena': document.getElementById('campoContrasena').value,
