@@ -1,0 +1,2 @@
+SELECT COUNT(*) FROM usuarios
+WHERE EDAD > 18;
