@@ -1,0 +1,1 @@
+SELECT AVG(EDAD) FROM usuarios;
